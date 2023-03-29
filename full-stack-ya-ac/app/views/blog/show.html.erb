@@ -2,4 +2,6 @@
 
 <p><%= @blog.content %></p>
 
-<%= link_to 'Back to Home', blogs_path %>
+<p><%= button_to "Delete This Post", delete_post_path, method: :delete%></p>
+
+<p><%= link_to 'Back to Home',blogs_path %></p>
