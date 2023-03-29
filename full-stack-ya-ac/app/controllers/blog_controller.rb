@@ -23,6 +23,9 @@ class BlogController < ApplicationController
             redirect_to blogs_path
         end
     end
+    def edit
+        @blog = Blog.find(params[:id])
+    end
 end
 
 private
