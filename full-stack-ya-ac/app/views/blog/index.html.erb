@@ -2,6 +2,6 @@
 
 <ul>
   <% @blogs.each do |blog| %>
-  <li><%= blog.title %></li>
+  <li><%= link_to  blog.title, show_path(blog.id)  %></li>
   <% end %>
 </ul>
