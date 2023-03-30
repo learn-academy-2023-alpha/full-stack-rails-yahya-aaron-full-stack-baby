@@ -1,6 +1,6 @@
-<h2><%= @blog.title %></h2>
+<h2 class="headers"><%= @blog.title %></h2>
 
-<p><%= @blog.content %></p>
+<div class="posts"><%= @blog.content %></div>
 
 <p><%= button_to "Edit This Post", edit_path, method: :get %></p>
 <p><%= button_to "Delete This Post", delete_post_path, method: :delete%></p>
