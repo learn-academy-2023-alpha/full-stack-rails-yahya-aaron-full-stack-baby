@@ -9,10 +9,6 @@ RSpec.describe Blog, type: :model do
     testpost = Blog.create title: "this post has no content"
     expect(testpost.errors[:content]).to_not be_empty
   end
-  # it 'is not valid with any nil values' do
-  #   testpost = Blog.create title: nil, content: nil
-  #   expect(testpost.errors[:title]).to_not be_empty
-  # end
   it 'blog titles must be unique' do
     testpost = Blog.create title: 'thesame', content: "this isn't long enough"
     testpost2 = Blog.create title: 'thesame', content: "this isn't long enough"
